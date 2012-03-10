@@ -11,12 +11,14 @@
 <body>
     <form id="">
         <div>
-            <label for="type">тип конструкции</label>
-            <select id="type">
-                <option>1 стровки</option>
-                <option>2 створки</option>
-                <option>3 створки</option>
-            </select>
+            <input type="radio" id="parts1" name="parts" value="1">
+            <label for="parts1">1 створка</label>
+
+            <input type="radio" id="parts2" name="parts" value="2">
+            <label for="parts2">2 створки</label>
+
+            <input type="radio" id="parts3" name="parts" value="3">
+            <label for="parts3">3 створки</label>
         </div>
 
         <div>
@@ -26,6 +28,16 @@
                 <option>Дерево</option>
             </select>
         </div>
+
+        <div>
+            <label for="width">Ширина</label>
+            <input type="text" name="width" id="width">
+
+            <label for="height">Высота</label>
+            <input type="text" name="height" id="height">
+        </div>
+
+        <button id="calculate" >Calculate</button>
     </form>
 
     <label for="price">Цена</label>
